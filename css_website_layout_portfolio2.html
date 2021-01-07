@@ -1,0 +1,228 @@
+<!-- abc
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf_CSS_Presentation</title>
+
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* left side images */
+        .left_body_image {
+            height:
+                width:100%;
+            padding: 20px;
+        }
+
+
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Andrew J. Wolf</h1>
+
+        <h2>WolfSolutions7@gmail.com</h2>
+        <p>302-304-4145</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Coding Temple</a>
+        <a href="#">Learn HTML</a>
+        <a href="#">Learn CSS</a>
+        <a href="#">Learn Python</a>
+        <a href="#">Other Page</a>
+        <a href="#" style="float:right">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Forecasting, Planning & Analysis (FPA)</h2>
+                <h5>Predict - Plan - Assess - Enhanc - Share</h5>
+
+                <div class="left_body_image">
+                    <img src="C:/development/images/bruno-bergher--8ttvM3Ca94-unsplash_200h.png" alt="two lane highway"
+                        width="1200" height="200">
+
+                </div>
+
+
+                <p>Forecasting, Planning and Analysis are tools that allow business leaders and
+                    other stakeholders to predict, plan, assess and explain actual results to inital assumptions.<br>
+                    Perceived forecast inaccuracy, inefficient planning and incomplete analysis contribute to workplace
+                    'political risk'.
+                    <br>
+                    <br>
+                    <bold>Solution: Create world class solution to assist and support leader. </bold>
+
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Executive Dashboard and Presentation</h2>
+                <h5>Socialize - Evangelize - Synergize</h5>
+
+
+                <div class="left_body_image">
+                    <img src="C:/development/images/luke-chesser-JKUTrJ4vK00-unsplashw1200.jpg" alt="two lane highway"
+                        width="1200" height="200">
+                </div>
+
+                <p>Comprehension, Socialization</p>
+                <p>Leaders will pay for control and comprehension of a process, particularly when they control the
+                    socialization process as well. Especially true when the insight is rich with value added content.
+                </p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Me</h2>
+                <div class="fakeimg" style="height:100px;">Image</div>
+
+            </div>
+            <div class="card">
+                <h3>Interesting</h3>
+                <div class="fakeimg">
+                    <p>Web Development</p>
+                </div>
+                <div class="fakeimg">
+                    <p>Data Science</p>
+                </div>
+                <div class="fakeimg">
+                    <p>Optimization</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Facebook: Andrews Developing</p>
+                <p>LinkedIn: Andrew Wolf</p>
+                <p>Twitter: twitter@hello</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
